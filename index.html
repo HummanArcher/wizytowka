@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PODMIEŃ: tytuł i opis -->
+  <title>Dawid Pławecki</title>
+  <meta name="description" content="Dawid Pławecki — automatyzacja procesów, optymalizacja pracy zespołów, system ERP. Kontakt, linki i krótkie info w jednym miejscu.">
+
+  <!-- Opcjonalnie: favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- SEO/OG/JSON-LD: wklej blok z sekcji „SEO i metadane” -->
+  <style>
+    :root{
+      --bg:#0b0c10; --card:#11131a; --text:#eef2ff; --muted:#b8c0ff;
+      --line:rgba(255,255,255,.12); --accent:#7aa2ff;
+      --radius:18px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f6f7fb; --card:#ffffff; --text:#111827; --muted:#4b5563; --line:rgba(17,24,39,.12); --accent:#1d4ed8; }
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:var(--bg); color:var(--text);
+      min-height:100svh;
+      display:grid; place-items:center;
+      padding:24px;
+    }
+    a{color:inherit}
+    a:hover{text-decoration:none}
+
+    .skip{
+      position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip:focus{ position:static; width:auto; height:auto; padding:10px 12px; border:1px solid var(--line); border-radius:10px; background:var(--card); }
+
+    .card{
+      width:min(920px, 100%);
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:0 15px 40px rgba(0,0,0,.25);
+    }
+
+    .profile{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:18px;
+      align-items:center;
+    }
+    @media (min-width:720px){
+      .profile{ grid-template-columns: 180px 1fr; }
+    }
+
+    .avatar{
+      width:140px; height:140px;
+      border-radius:999px;
+      display:block;
+      border:1px solid var(--line);
+      object-fit:cover;
+    }
+    @media (min-width:720px){ .avatar{ width:160px; height:160px; } }
+
+    h1{ font-size: clamp(22px, 3.5vw, 34px); margin:0 0 6px 0; letter-spacing:-.02em; }
+    .tagline{ margin:0; color:var(--muted); }
+
+    .grid{
+      display:grid; gap:14px;
+      grid-template-columns: 1fr;
+      margin-top:18px;
+    }
+    @media (min-width:720px){ .grid{ grid-template-columns: 1.1fr .9fr; } }
+
+    section{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:14px 14px 12px;
+    }
+    section h2{ font-size:16px; margin:0 0 10px; }
+    ul{ margin:0; padding-left:18px; }
+    li{ margin:6px 0; }
+
+    .btnrow{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .btn{
+      display:inline-block; padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      text-decoration:none;
+      background:transparent;
+    }
+    .btn:focus-visible{
+      outline:3px solid var(--accent);
+      outline-offset:2px;
+    }
+
+    footer{ margin-top:14px; color:var(--muted); font-size:14px; }
+    @media (prefers-reduced-motion: reduce){
+      *{ scroll-behavior:auto !important; transition:none !important; animation:none !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+
+  <main id="main" class="card">
+    <header class="profile">
+      <!-- PODMIEŃ: pliki zdjęć (patrz sekcja „Obrazy i wydajność”) -->
+      <img
+        class="avatar"
+        src="img/ja-400.jpg"
+        width="400" height="400"
+        alt="Zdjęcie Dawida Pławeckiego"
+        decoding="async">
+
+      <div>
+        <h1>Dawid Pławecki</h1>
+        <p class="tagline">Automatyzacja procesów • Optymalizacja pracy zespołów • Systemy ERP</p>
+        <div class="btnrow">
+          <!-- PODMIEŃ: e-mail i linki -->
+          <a class="btn" href="mailto:d.plawecki@dav-it.pl?subject=Wiadomo%C5%9B%C4%87%20ze%20strony%20wizyt%C3%B3wki">Napisz e‑mail</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section aria-labelledby="kontakt">
+        <h2 id="kontakt">Kontakt</h2>
+        <ul>
+          <li><strong>E-mail:</strong> <a href="mailto:d.plawecki@dav-it.pl">d.plawecki@dav-it.pl</a></li>
+          <li><strong>Dostępność:</strong> pn–pt, 8:00–20:00 • zdalnie</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="linki">
+        <h2 id="linki">Linki</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/dawid-plawecki/">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/plawecki.dawid/">Facebook</a></li>
+          <li><a href="https://www.tiktok.com/@www.dawidplawecki.com">TikTok</a></li>
+          <li><a href="https://www.instagram.com/dawid_plawecki/">Instagram</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <small>Bez ciasteczek i bez śledzenia. Jeśli piszesz e‑mail — przetwarzam dane wyłącznie w celu odpowiedzi.</small>
+    </footer>
+  </main>
+</body>
+</html>
